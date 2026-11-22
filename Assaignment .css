@@ -1,0 +1,137 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+
+/* Background-------------------- */
+
+.Background{
+    width: 100%;
+    height: 100vh;
+
+    position: relative;
+
+    background: linear-gradient( to bottom, #00183f, #002c61, #004078 );
+        
+        
+        
+    }
+
+/* Moon------------------------- */
+
+.moon{
+    width: 55px;
+    height: 55px;
+
+    background: #fff;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 10%;
+    right: 20%;
+
+    
+}
+
+/* House-----------*/
+
+.house{
+    width: 100px;
+    height: 150px;
+
+    position: absolute;
+    left: 50%;
+    bottom: 12%;
+    
+
+    transform: translateX(-50%);
+}
+
+/* Roof ---------------------------*/
+
+.chadh{
+    width: 0;
+    height: 0;
+
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid #a95122;
+}
+
+/* House-------------- */
+
+.house-body{
+    width: 100px;
+    height: 115px;
+
+    background: #f4b77e;
+
+    position: relative;
+}
+
+/* Windows */
+
+.windows{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+
+.window{
+    width: 23px;
+    height: 23px;
+
+    background: #7ed9ed;
+    border: 3px solid #9b704b;
+}
+
+/* Door Frame */
+
+.door-frame{
+    width: 30px;
+    height: 55px;
+
+    position: absolute;
+    bottom: 0;
+    left: 35px;
+
+}
+
+/* Door */
+
+.door{
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: linear-gradient(
+        to right,
+        #704328,
+        #3b2115
+    );
+
+    border: 2px solid #29180f;
+
+    transform-origin: left center;
+
+    transition: transform 1s ease-in-out;
+}
+
+/* Door Hover------------- */
+
+.door-frame:hover .door{
+    transform: rotateY(-105deg);
+}
+
